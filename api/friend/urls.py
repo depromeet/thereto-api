@@ -11,4 +11,8 @@ urlpatterns = [
         'request/<int:id>',
         views.FriendRequestAPIView.as_view(),
     ),
+    path(
+        'search/',
+        views.FriendSearchAPIView.as_view(),
+    ),
 ]
